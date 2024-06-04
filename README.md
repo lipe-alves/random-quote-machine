@@ -40,4 +40,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - your@email.com
+Felipe Alves - felipe.contato.a@gmail.com

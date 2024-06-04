@@ -1,0 +1,111 @@
+$spacing-sm: 8px;
+$spacing-md: 2 * $spacing-sm;
+$spacing-lg: 3 * $spacing-sm;
+
+$weight-light: 400;
+$weight-normal: 500;
+$weight-heavy: 600;
+
+$radius-sm: 8px;
+$radius-md: 2 * $radius-sm;
+$radius-lg: 3 * $radius-sm;
+
+$font-sm: 8px;
+$font-md: 2 * $font-sm;
+$font-lg: 3 * $font-sm;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html {
+    --quote-color: pink;
+}
+
+body {
+    background-color: var(--quote-color);
+}
+
+* {
+    transition: background-color 1s ease-in-out, color 0.5s ease-in-out;
+}
+
+.QuoteBox {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: max(500px, 33vw);
+    color: var(--quote-color);
+    padding: $spacing-lg;
+    font-weight: $weight-heavy;
+    border-radius: $radius-lg;
+
+    &,
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $spacing-sm;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &-text {
+        font-style: italic;
+        text-align: center;
+        font-size: $font-lg;
+        font-weight: $weight-heavy;
+        margin: 0;
+    }
+
+    &-author {
+        font-size: $font-md;
+        font-weight: $weight-light;
+    }
+
+    &-quotationMark {
+        display: inline-block;
+        font-size: 2.5 * $font-lg;
+        transform: translateY(40%) translateX(-50%);
+    }
+
+    &-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: $spacing-sm;
+        width: 100%;
+    }
+
+    &-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: $spacing-sm;
+        background-color: var(--quote-color);
+        color: #fff;
+        font-weight: $weight-light;
+        outline: none;
+        border: none;
+        border-radius: $radius-sm;
+        text-decoration: none;
+        cursor: pointer;
+        padding: $spacing-md;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

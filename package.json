@@ -4,7 +4,9 @@
     "description": "",
     "main": "build/index.html",
     "scripts": {
-        "build": "node scripts/build.js"
+        "build": "node scripts/build.js",
+        "predeploy": "npm run build",
+        "deploy": "firebase target:apply hosting random-quote-machine random-quote-machine-52bc4 && firebase deploy"
     },
     "keywords": [],
     "author": "",

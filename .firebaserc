@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "random-quote-machine-61911"
+  },
+  "targets": {
+    "random-quote-machine-61911": {
+      "hosting": {
+        "random-quote-machine": [
+          "random-quote-machine-52bc4"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
